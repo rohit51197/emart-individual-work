@@ -1,0 +1,54 @@
+<div class="container mt-5">
+
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-md-5 ">
+            <div class="small text-center text-danger">
+                <h5>{{errorMessage}}</h5>
+
+            </div>
+            <div class="card card-align">
+                <div class="card-header text-center" style="background-color:#F05259">
+                    <h2 class="text-white">LOGIN</h2>
+                </div>
+                <div class="card-body">
+                    <b>Sign in as : </b>
+                    <div class="form-check-inline">
+                        <label for="buyer" class="form-check-label">
+                            <input type="radio" class="form-check-input" id="buyer" [(ngModel)]='sign' value='buyer'
+                                name="radioSign" />
+                            Buyer
+                        </label>
+                    </div>
+                    <div class="form-check-inline">
+                        <label for="buyer" class="form-check-label">
+                            <input type="radio" class="form-check-input" id="seller" [(ngModel)]='sign' value='seller'
+                                name="radioSign" />
+                            Seller
+                        </label>
+                    </div>
+                    <div class="form-group mt-3">
+                        <input type="text" class="form-control" placeholder="UserName" id="username"
+                            [(ngModel)]="username" name="username" />
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="Password" id="password"
+                            [(ngModel)]="password" name="password" />
+                    </div>
+                    <button type="submit" (click)="validate()" class="btn btn-outline-primary">LOGIN</button>
+                </div>
+
+                <div class="card-footer mx-2 my-3">
+                    <div class="d-flex justify-content-center links">
+                        Don't have an account?
+                        <a routerLink="/buyer-signup">Sign Up as Buyer</a>
+                        <a routerLink="/seller-signup">Sign Up as Seller</a>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

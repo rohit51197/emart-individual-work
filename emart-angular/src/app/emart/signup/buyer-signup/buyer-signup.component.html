@@ -1,0 +1,65 @@
+<div class="container pt-5">
+    <div class="row">
+        <div class="col"></div>
+        <div class="col-6">
+            <div class="card">
+                <div class="card-header text-center" style="background-color:#F05259">
+                    <h2 class="text-white">Buyer Sign Up</h2>
+                </div>
+                <div class="card-body">
+                    <form action="">
+                        <div class="row">
+                            <div class="col">
+                                <div class="Form-group mx-2 my-3">
+                                    <b><label for="username">UserName</label></b>
+                                    <input type="text" class="form-control" id="username" placeholder="username"
+                                        name="username" [(ngModel)]="buyer.username">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <div class="Form-group mx-2 my-3">
+                                    <b><label for="password">Password</label></b>
+                                    <input type="password" class="form-control" id="pass" placeholder="password"
+                                        name="password" [(ngModel)]="buyer.password">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="Form-group mx-2 my-3">
+                                    <b><label for="confirmpassword">Confirm Password</label></b>
+                                    <input type="password" class="form-control" id="pass" placeholder="confirm password"
+                                        name="confirm password">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <div class="Form-group mx-2 my-3">
+                                    <b><label for="email">Mail-Id</label></b>
+                                    <input type="text" class="form-control" id="EmailID" placeholder="email"
+                                        name="email" [(ngModel)]="buyer.email">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="Form-group mx-2 my-3">
+                                    <b><label for="phoneno">Mobile</label></b>
+                                    <input type="tel" class="form-control" id="phoneno" placeholder="mobile number"
+                                        name="mobilenumber" [(ngModel)]="buyer.mobile">
+                                </div>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary float-right" (click)="addBuyer()">Register</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+        </div>
+    </div>
+
+</div>
